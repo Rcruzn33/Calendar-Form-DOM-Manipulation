@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calendar</title>
+    <link rel = "Stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="Container">
+    <h2>Calendar</h2>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-event">Event</label>
+                        <input type="text" class="form-control" id="new-event" placeholder="Add Event">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="event-date">Date</label>
+                        <input type="date" class="form-control" id="event-date" placeholder="mm/dd/yyyy">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="event-time">Time</label>
+                        <input type="time" class="form-control" id="event-time" placeholder="00:00">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="event-location">Location</label>
+                        <input type="text" class="form-control" id="event-location" placeholder="Add Location">
+                    </div>
+                </div>
+                <button id="add" class="btn btn-primary form-control">Submit</button>
+            </div>
+        </div>
+    </div>
+   <table id="list" class="table table-striped table-hover">
+    <tr>
+    <th>Event</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Location</th>
+    </tr>
+   </table>
+   <script src="Calendar.js"></script>
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
